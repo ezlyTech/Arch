@@ -7,6 +7,11 @@
   padding: 0;
 }
 
+section {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
 h1 {
   font-family: "League Spartan", Arial, sans-serif;
   font-weight: 700;
@@ -131,11 +136,7 @@ li {
   display: none;
 }
 
-.header .header__container .header__button .header__open-menu {
-  display: none;
-}
-
-.header .header__container .header__button .header__close-menu {
+.header .header__container .header__button {
   display: none;
 }
 
@@ -161,21 +162,24 @@ li {
   .header .header__container .header__navlinks {
     display: none;
   }
-  .header .header__container .header__button .header__open-menu {
+  .header .header__container .header__button {
     display: block;
-  }
-  .header .header__container .header__button .header__close-menu {
-    display: none;
   }
   .header .header__container .mobile__header-navlinks {
-    display: block;
+    display: none;
     max-width: 310px;
+    z-index: 5;
+  }
+  .header .header__container .mobile__header-navlinks.responsive {
+    display: block;
   }
   .header .header__container .mobile__header-navlinks .header-navlinks__wrapper {
     position: absolute;
     width: 100%;
     top: 96px;
     right: 0;
+    -webkit-box-shadow: -23px 42px 65px rgba(0, 0, 0, 0.25);
+            box-shadow: -23px 42px 65px rgba(0, 0, 0, 0.25);
   }
   .header .header__container .mobile__header-navlinks .header-navlinks__wrapper .navlinks__items {
     background-color: #EEEFF4;
@@ -332,6 +336,9 @@ li {
   .footer .footer__container-mobile .footer-links .navlinks__items a {
     font-weight: 700;
     color: #7D828F;
+  }
+  .footer .footer__container-mobile .footer-links .footer__cta {
+    margin-top: 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */
