@@ -1,0 +1,2 @@
+function navMenu(){document.querySelectorAll(".mobile__header-navlinks").forEach((e=>e.classList.toggle("responsive")))}document.querySelector(".header__button").addEventListener("click",navMenu),document.addEventListener("DOMContentLoaded",(function(){new Splide(".splide").mount()}));
+//# sourceMappingURL=script.js.map
