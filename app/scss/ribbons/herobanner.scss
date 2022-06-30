@@ -5,7 +5,6 @@
 
 
         .splide__slide {
-            background-image: url("/assets/home/desktop/herobanner1.png");
             height: 720px;
             width: 100%;
             display: flex;
@@ -15,10 +14,22 @@
             align-items: flex-start;
             position: relative;
 
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #000000;
+                opacity: 0.25;
+            }
+
             .headings,
             .description,
             .button {
                 max-width: 544px;
+                z-index: 2;
             }
 
             h1 {
@@ -39,7 +50,73 @@
         }
 
         .splide__arrows {
+            display: none;
+        }
+
+        .splide__pagination {
+            position: absolute;
+            bottom: 0;
+            left: -95px;
+            right: auto;
+        }
+
+        .splide__pagination--custom {
             
+            .splide__pagination__page {
+                padding: 27px 30px;
+                border-radius: 0;
+                background: white;
+                opacity: 1;
+                color: #7D828F;
+                font-family: "League Spartan", Arial, sans-serif;
+                font-weight: 600;
+                width: 80px;
+                height: 80px;
+                font-size: 15px;
+                margin: 0;
+
+                &.is-active {
+                    transform: scale(1);
+                    background: #1B1D23;
+                    color: white;
+                }
+            }
+
+
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    .herobanner {
+
+        .herobanner__splide {
+    
+    
+            .splide__slide {
+                padding: 0 32px;
+
+                .headings {
+                    h1 {
+                        font-size: 48px;
+                        line-height: 48px;
+                        letter-spacing: -1.2px;
+                    }
+                }
+
+                .description {
+                    p {
+                        font-size: 15px;
+                    line-height: 25px;
+                    }
+                }
+            }
+    
+            .splide__pagination {
+                display: none;
+            }
         }
     }
 }
