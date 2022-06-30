@@ -1,3 +1,4 @@
+// HEADER
 function navMenu() {
     const navs = document.querySelectorAll('.mobile__header-navlinks');
 
@@ -6,3 +7,10 @@ function navMenu() {
   
 document.querySelector('.header__button')
         .addEventListener('click', navMenu);
+
+
+// Herobanner
+document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide' );
+    splide.mount();
+  } );

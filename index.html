@@ -7,6 +7,7 @@
     <title>Arch Studio</title>
     <link rel="stylesheet" href="./styles/main/main.css">
     <link rel="stylesheet" href="./styles/home/home.css">
+    <link rel="stylesheet" href="./styles/libs/splide.min.css">
 </head>
 <body>
 
@@ -44,15 +45,57 @@
 
 
 
-    
+    <!-- HERO BANNER -->
+    <section class="section herobanner">
+        <div class="splide herobanner__splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide herobanner__slide">
+                        <div class="headings">
+                            <h1>Project Paramour</h1>
+                        </div>
+                        <div class="description">
+                            <p>Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.</p>
+                        </div>
+                        <button class="button">
+                            <p>See our Portfolio</p> 
+                            <img src="./assets/icons/white-icon-arrow.svg" alt="">
+                        </button>
+                    </li>
 
-    <!-- Button -->
-    <a href="/">
-        <button class="button">
-            <p>Button</p> 
-            <img src="./assets/icons/white-icon-arrow.svg" alt="">
-        </button>
-    </a>
+                    <li class="splide__slide herobanner__slide">
+                        <div class="headings">
+                            <h1>Project Paramour</h1>
+                        </div>
+                        <div class="description">
+                            <p>Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.</p>
+                        </div>
+                        <button class="button">
+                            <p>See our Portfolio</p> 
+                            <img src="./assets/icons/white-icon-arrow.svg" alt="">
+                        </button>
+                    </li>
+
+                    <li class="splide__slide herobanner__slide">
+                        <div class="headings">
+                            <h1>Project Paramour</h1>
+                        </div>
+                        <div class="description">
+                            <p>Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.</p>
+                        </div>
+                        <button class="button">
+                            <p>See our Portfolio</p> 
+                            <img src="./assets/icons/white-icon-arrow.svg" alt="">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    
 
 
 
@@ -142,7 +185,9 @@
         </div>
     </footer>
 
+    <script src="./js/herobanner.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/libs/splide.min.js"></script>
 
 </body>
 </html>

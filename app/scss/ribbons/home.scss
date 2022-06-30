@@ -1,3 +1,54 @@
+// HEROBANNER
+.herobanner {
+
+    .herobanner__splide {
+
+
+        .splide__slide {
+            background-image: url("/assets/home/desktop/herobanner1.png");
+            height: 720px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 190px;
+            align-items: flex-start;
+            position: relative;
+
+            .headings,
+            .description,
+            .button {
+                max-width: 544px;
+            }
+
+            h1 {
+                font-weight: 700;
+                font-size: 80px;
+                line-height: 80px;
+                letter-spacing: -2px;
+                margin-bottom: 14px;
+            }
+
+            p {
+                color: white;
+            }
+
+            .button {
+                margin-top: 40px;
+            }
+        }
+
+        .splide__arrows {
+            
+        }
+    }
+}
+
+
+
+
+
+
 // BANNER
 .banner {
 
@@ -44,15 +95,13 @@
     }
 }
 
-
-// BANNER
 @media only screen and (max-width: 768px) {
     .banner {
         
         .banner__container {
 
             .banner__image {
-
+                
             }
 
             .banner__content {

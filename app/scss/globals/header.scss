@@ -1,0 +1,99 @@
+// HEADER
+.header {
+
+    .header__container {
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 56px 0;
+
+        .header__logo {
+            margin-right: 95px;
+        }
+
+        .header__navlinks {
+            .navlinks__items {
+                display: flex;
+                flex-direction: row;
+                padding: 0;
+                gap: 56px;
+
+                .navlinks__item {
+                    list-style: none;
+                    color: #7D828F;
+                    
+                    a {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .mobile__header-navlinks {
+            display: none;
+        }
+
+        .header__button {
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        .header__container {
+            max-width: 311px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 32px 0;
+            justify-content: space-between;
+            position: relative;
+    
+            .header__logo {
+                margin-right: 0;
+            }
+    
+            .header__navlinks {
+                display: none;
+            }
+
+            .header__button {
+                display: block;
+            }
+
+            .mobile__header-navlinks {
+                display: none;
+                max-width: 310px;
+                z-index: 5;
+
+                &.responsive {
+                    display: block;
+                }
+
+                .header-navlinks__wrapper {
+                    position: absolute;
+                    width: 100%;
+                    top: 96px;
+                    right: 0;
+                    box-shadow: -23px 42px 65px rgba(0, 0, 0, 0.25);
+
+                    .navlinks__items {
+                        background-color: #EEEFF4;
+                        padding: 48px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 32px;
+
+                        a {
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
