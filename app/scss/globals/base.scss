@@ -8,6 +8,11 @@ section {
     margin: 0 auto;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 // HEADINGS
 h1 {
     font-family: "League Spartan", Arial, sans-serif;
