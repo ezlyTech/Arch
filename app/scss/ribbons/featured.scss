@@ -25,6 +25,12 @@
                 background-size: cover;
                 background-position: center;
                 cursor: pointer;
+                overflow: hidden;
+
+                &:hover {
+                    transform: scale(1.03);
+                    transition: ease-in-out .3s;
+                }
 
                 &::before {
                     content: '';
