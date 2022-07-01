@@ -1,0 +1,74 @@
+.contact {
+    padding: 200px 32px;
+
+    .contact__container {
+
+        .top__container {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 48px;
+
+            .box {
+                max-width: 350px;
+
+                .top p {
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 35px;
+                    color: #60636D;
+                    margin-bottom: 8px;
+                }
+
+                .details p {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 35px;
+                    color: #60636D;
+                    margin-bottom: 32px;
+                }
+
+                a.link {
+                    display: flex;
+                    gap: 24px;
+
+                    p {
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #1B1D23;
+                    }
+
+                }
+            }
+        }
+
+        .map__container {
+            width: 100%;
+            margin-top: 200px;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 428px) {
+    .contact .contact__container .map__container {
+        height: 390px;
+        margin-top: 78px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
