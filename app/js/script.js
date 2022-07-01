@@ -9,6 +9,16 @@ document.querySelector('.header__button')
         .addEventListener('click', navMenu);
 
 
+// Sticky Header
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 20){  
+        $("header").addClass("stickyHeader");
+        }
+        else{
+        $("header").removeClass("stickyHeader");
+        }
+})
+
 // Herobanner
 // var herobanner = document.querySelectorAll('.herobanner');
 // herobanner.addEventListener( 'load', function() {

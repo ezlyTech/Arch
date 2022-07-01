@@ -1,5 +1,11 @@
 // HEADER
 .header {
+    z-index: 2;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     .header__container {
         max-width: 1110px;
@@ -37,6 +43,24 @@
         .header__button {
             display: none;
         }
+    }
+}
+
+
+.header.stickyHeader {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    transition: .3s;
+    box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.06);
+
+    .header__container {
+        padding: 40px 0;
+        transition: .3s;
     }
 }
 
@@ -95,4 +119,15 @@
             }
         }
     }
+
+    .header.stickyHeader {
+
+        width: 100%;
+    
+        .header__container {
+            padding: 25px 34px;
+            transition: .3s;
+        }
+    }
 }
+

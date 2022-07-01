@@ -1,4 +1,5 @@
 .portfolio-page {
+    margin-top: 150px;
 
     .featured__items {
         flex-wrap: wrap;
@@ -6,5 +7,11 @@
         & .number {
             visibility: hidden;
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolio-page {
+        margin-top: 110px;
     }
 }
