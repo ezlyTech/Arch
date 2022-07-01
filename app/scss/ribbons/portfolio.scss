@@ -1,0 +1,10 @@
+.portfolio-page {
+
+    .featured__items {
+        flex-wrap: wrap;
+
+        & .number {
+            visibility: hidden;
+        }
+    }
+}
