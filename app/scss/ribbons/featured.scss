@@ -73,7 +73,7 @@
             }
         }
 
-        button.mobile {
+        .button.mobile {
             display: none;
         }
     }
@@ -117,7 +117,7 @@
 
             .featured__top {
 
-                button {
+                .button {
                     display: none;
                 }
             }
@@ -132,11 +132,12 @@
                 }
             }
 
-            button.mobile {
+            .button.mobile {
                 display: flex;
                 margin: 0 auto;
                 margin-top: 24px;
                 width: 100%;
+                padding: 24px 0;
             }
         }
 

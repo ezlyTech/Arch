@@ -62,13 +62,27 @@
 
 
 @media only screen and (max-width: 428px) {
-    .contact .contact__container .map__container {
-        height: 390px;
-        margin-top: 78px;
+    .contact .contact__container {
+        position: relative;
 
-        img {
-            height: 100%;
-            object-fit: cover;
+        &::before {
+            content: '';
+            width: 65px;
+            height: 1px;
+            background: #C8CCD8;
+            position: absolute;
+            top: -67px;
+            left: 0;
         }
-    }
+
+        .map__container {
+            height: 390px;
+            margin-top: 78px;
+    
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    } 
 }
